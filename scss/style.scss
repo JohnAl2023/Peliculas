@@ -1,0 +1,133 @@
+// Variables
+$primary-color: rgb(252, 252, 253);
+$secondary-color: rgb(209, 207, 207);
+$color-fondo: #000;
+$font-logotipo: 'Bebas Neue', cursive;
+$padding-nav: 10px;
+$margin-nav: 20px;
+$font-size: 16px;
+$gutter: 20px; // Espacio entre las imágenes
+$min-image-width: 200px; // Ancho mínimo de cada imagen
+$max-images-per-row: 4; // Número máximo de imágenes por fila
+
+body {
+	background-color: $color-fondo;
+  }
+
+  h1 {
+	font-size: 2.5rem;
+	color: $primary-color;
+	margin-top: 50px;
+	text-align: center;
+}
+.container {
+    text-align: center;
+}
+  .contenedor {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-image: url('/img/baner6.jpg');
+	background-size: cover;
+    background-position: center;
+	padding: 10px;
+	height: 15vh;
+	margin: 0 auto;
+	width: 80%;
+	max-width: 90vw;
+	
+	@media (max-width: 768px) {
+		flex-direction: column;
+		height: auto;
+	}
+}
+
+.logotipo {
+	color: $primary-color;
+	flex: 1;
+	font-size: 2rem;
+	font-family: $font-logotipo;
+	margin-top: 10px;
+}
+
+nav {
+	text-align: right;
+	display: flex;
+  	justify-content: flex-end;
+	
+	@media (max-width: 768px) {
+		text-align: center;
+		margin-top: -20px;
+		
+	}
+}
+
+nav a {
+	display: block;
+  	padding: 10px 15px;
+ 	margin-left: 20px;
+	color: $secondary-color;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: $font-size;
+	
+	@media (max-width: 768px) {
+		display: block;
+		margin: 10px 0;
+	}
+}
+
+nav a.activo {
+	color: $primary-color;
+}
+#input-search {
+	width: 80%;
+	margin-top: 20px;
+	height: 4px;
+	border: none;
+	background-color: #ddd;
+	outline: none;
+	font-size: 16px;
+	padding: 10px;
+  }
+.filters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+	color: $primary-color;
+}
+
+label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+select {
+    margin-right: 20px;
+}
+#image-list {
+	list-style: none;
+	display: flex; // convierte al ul en un contenedor flexible
+	justify-content: center; // alinea horizontalmente los elementos en el centro del contenedor
+	align-items: center; // alinea verticalmente los elementos en el centro del contenedor
+	flex-wrap: wrap; // envuelve los elementos a la siguiente línea si no caben en la actual
+	width: 90%;
+    max-width: 1300px; /* opcional - para establecer un ancho máximo */
+	li {
+	  margin: 0 10px; // añade un margen a ambos lados de cada elemento li
+	  margin-right: 10px;
+	  margin-bottom: 10px;
+	}
+	@media screen and (max-width: 767px) {
+		#image-list li {
+		  width: 50%;
+		}
+	  }
+  }
+
+
+
+
+
+

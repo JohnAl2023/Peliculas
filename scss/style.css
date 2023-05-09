@@ -1,0 +1,123 @@
+@charset "UTF-8";
+body {
+  background-color: #000;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: rgb(252, 252, 253);
+  margin-top: 50px;
+  text-align: center;
+}
+
+.container {
+  text-align: center;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("/img/baner6.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 10px;
+  height: 15vh;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 90vw;
+}
+@media (max-width: 768px) {
+  .contenedor {
+    flex-direction: column;
+    height: auto;
+  }
+}
+
+.logotipo {
+  color: rgb(252, 252, 253);
+  flex: 1;
+  font-size: 2rem;
+  font-family: "Bebas Neue", cursive;
+  margin-top: 10px;
+}
+
+nav {
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+}
+@media (max-width: 768px) {
+  nav {
+    text-align: center;
+    margin-top: -20px;
+  }
+}
+
+nav a {
+  display: block;
+  padding: 10px 15px;
+  margin-left: 20px;
+  color: rgb(209, 207, 207);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+@media (max-width: 768px) {
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+nav a.activo {
+  color: rgb(252, 252, 253);
+}
+
+#input-search {
+  width: 80%;
+  margin-top: 20px;
+  height: 4px;
+  border: none;
+  background-color: #ddd;
+  outline: none;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  color: rgb(252, 252, 253);
+}
+
+label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+select {
+  margin-right: 20px;
+}
+
+#image-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 90%;
+  max-width: 1300px; /* opcional - para establecer un ancho máximo */
+}
+#image-list li {
+  margin: 0 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 767px) {
+  #image-list #image-list li {
+    width: 50%;
+  }
+}/*# sourceMappingURL=style.css.map */
